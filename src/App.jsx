@@ -20,7 +20,7 @@ const [notasFiltradas, setNotasFiltradas] = useState([])
 
 useEffect(() => {
     let data = localStorage.getItem("notas");
-    if(data == '[]'){
+    if(data === '[]'){
         setNotas([{id: "idTest", titulo: 'Bienvenido', texto: 'Esta es  una nota de ejemplo, puedes borrarla cuando quieras', color: '#2D555E'}])
     }else{
         setNotas(JSON.parse(data))
@@ -73,8 +73,9 @@ setConsultaNotas((e.target.value))
 
 var notasBuscadas = notas.filter(nota => {
     for (let i = 0; i < consultaNotas.length; i++) {
-        return nota.titulo.charAt(i) == consultaNotas.charAt(i);
+        var notasEncontradas =  nota.titulo.charAt(i) === consultaNotas.charAt(i);
     }
+    return notasEncontradas;
 })
 setNotasFiltradas(notasBuscadas)
 }

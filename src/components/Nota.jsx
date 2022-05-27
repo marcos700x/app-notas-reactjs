@@ -15,7 +15,7 @@ const Nota = ({titulo, texto, id, eliminarFunction, estilo, notaObj}) => {
 
 const cambiarColores = (color, id) => {
   var colorAgregado = '';
-  var notaSeleccionada = notaObj.filter(nota => nota.id == id)
+  var notaSeleccionada = notaObj.filter(nota => nota.id === id)
    notaSeleccionada.forEach(nota => {
      nota.color = color;
      colorAgregado = nota.color;
@@ -23,7 +23,7 @@ const cambiarColores = (color, id) => {
    localStorage.setItem("notas", JSON.stringify(notaObj));
   
   document.getElementById(id).style.backgroundColor = colorAgregado;
-  document.getElementById(id).style.borderColor = (colorAgregado != 'transparent' ? colorAgregado : '#5f6368')
+  document.getElementById(id).style.borderColor = (colorAgregado !== 'transparent' ? colorAgregado : '#5f6368')
 }
 
 
