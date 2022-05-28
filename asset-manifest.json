@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/app-notas-reactjs/static/css/main.d8204750.css",
-    "main.js": "/app-notas-reactjs/static/js/main.11d110ff.js",
+    "main.js": "/app-notas-reactjs/static/js/main.df0bb52e.js",
     "index.html": "/app-notas-reactjs/index.html",
     "main.d8204750.css.map": "/app-notas-reactjs/static/css/main.d8204750.css.map",
-    "main.11d110ff.js.map": "/app-notas-reactjs/static/js/main.11d110ff.js.map"
+    "main.df0bb52e.js.map": "/app-notas-reactjs/static/js/main.df0bb52e.js.map"
   },
   "entrypoints": [
     "static/css/main.d8204750.css",
-    "static/js/main.11d110ff.js"
+    "static/js/main.df0bb52e.js"
   ]
 }
