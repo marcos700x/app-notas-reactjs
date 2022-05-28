@@ -83,7 +83,7 @@ setNotasFiltradas(notasBuscadas)
   return (
     <div className='App'>
         <nav>
-            <div style={{display: 'flex', alignItems: 'center', gap: '2rem'}}>
+            <div style={{display: 'flex', alignItems: 'center', gap: '2rem', width: '100%'}}>
             <h1>Notas</h1>
             <input type="search" onChange={(e) => buscarNotas(e) } placeholder='Buscar tus notas por titulo'/>
             </div>
