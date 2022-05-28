@@ -89,7 +89,7 @@ setNotasFiltradas(notasBuscadas)
             </div>
 
             <div className="botonesNav">
-                <button onClick={() => setNotasColumn_Row(!notasColumn_Row)} title={notasColumn_Row ? 'Vista de lista' : 'Vista de cuadricula'}>
+                <button className='botonView' onClick={() => setNotasColumn_Row(!notasColumn_Row)} title={notasColumn_Row ? 'Vista de lista' : 'Vista de cuadricula'}>
                 {notasColumn_Row ? <BsViewList color='#e8eaed' size={'1.5rem'}/> : <IoGridOutline color='#e8eaed' size={'1.5rem'}/>}
                 </button>
                 <button onClick={() => eliminarTodas()} title='Eliminar todo'>
@@ -120,7 +120,7 @@ setNotasFiltradas(notasBuscadas)
 {consultaNotas === '' ?
     notas.map((nota) => 
     <Nota
-    estilo = {notasColumn_Row ? {backgroundColor: nota.color, borderColor: nota.color} : {width: '700px', margin: '1rem', backgroundColor: nota.color, borderColor: nota.color}}
+    estilo = {notasColumn_Row ? {backgroundColor: nota.color, borderColor: nota.color} : { width: '50%', margin: '1rem', backgroundColor: nota.color, borderColor: nota.color}}
     titulo = {nota.titulo}
     texto = {nota.texto}
     key={nota.id}
@@ -133,7 +133,7 @@ setNotasFiltradas(notasBuscadas)
     :
     notasFiltradas.map(notaFiltrada =>
     <Nota
-    estilo = {notasColumn_Row ? {backgroundColor: notaFiltrada.color, borderColor: notaFiltrada.color} : {width: '700px', margin: '1rem', backgroundColor: notaFiltrada.color, borderColor: notaFiltrada.color}}
+    estilo = {notasColumn_Row ? {backgroundColor: notaFiltrada.color, borderColor: notaFiltrada.color} : {width: '50%',  margin: '1rem', backgroundColor: notaFiltrada.color, borderColor: notaFiltrada.color}}
     titulo ={notaFiltrada.titulo}
     texto = {notaFiltrada.texto}
     key = {notaFiltrada.id}
